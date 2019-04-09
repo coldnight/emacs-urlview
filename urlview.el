@@ -18,7 +18,7 @@
 (defun uv/find-urls-in-current-buffer()
   "Find URLs in current buffer."
   (save-match-data
-    (let ((regexp "http\\(?:s\\)?://\\w+\\(?:[-./#\+%&?=_:]\\w*\\)+")
+    (let ((regexp "http\\(?:s\\)?://\\w+\\(?:[-./#\+%&?=_:~]\\w*\\)+")
           (string (buffer-string))
           (pos 0)
           matches)
